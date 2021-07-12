@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <include layout="@layout/title_detail"
+            android:id="@+id/layoutTitle"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                style="@style/text15"
+                android:background="@color/colorGrayLight"
+                android:layout_weight="1"
+                android:text="Thiết lập bán hàng"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center_vertical"
+                    style="@style/text15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mặt hàng"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center_vertical"
+                    style="@style/text15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mặt hàng"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center_vertical"
+                    style="@style/text15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mặt hàng"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center_vertical"
+                    style="@style/text15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mặt hàng"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center_vertical"
+                    style="@style/text15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mặt hàng"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center_vertical"
+                    style="@style/text15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mặt hàng"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                style="@style/text15"
+                android:background="@color/colorGrayLight"
+                android:layout_weight="1"
+                android:text="Quản lý"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center_vertical"
+                    style="@style/text15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mặt hàng"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:gravity="center_vertical"
+                    style="@style/text15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mặt hàng"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
