@@ -1,4 +1,4 @@
-package com.example.canifa_shop.Product;
+package com.example.canifa_shop.Product.Object;
 
 public class Product {
     private int ID;

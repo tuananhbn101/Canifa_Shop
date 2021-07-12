@@ -1,6 +1,5 @@
 package com.example.canifa_shop.SQLHelper;
 
-import android.accounts.Account;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -11,7 +10,7 @@ import androidx.annotation.Nullable;
 
 import com.example.canifa_shop.Bill.Object.Bill;
 import com.example.canifa_shop.Login.Object.Accounts;
-import com.example.canifa_shop.Product.Product;
+import com.example.canifa_shop.Product.Object.Product;
 import com.example.canifa_shop.Report.Objcet.Report;
 
 import java.util.ArrayList;
