@@ -10,4 +10,5 @@
     <color name="colorWhile">#FFFFFFFF</color>
     <color name="colorGrayLight">#ECECEC</color>
     <color name="colorRed">#FB1919</color>
+    <color name="colorRed1">#FB1919</color>
 </resources>
