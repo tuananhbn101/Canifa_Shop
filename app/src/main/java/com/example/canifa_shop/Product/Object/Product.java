@@ -2,6 +2,17 @@ package com.example.canifa_shop.Product.Object;
 
 public class Product {
     private int ID;
+    private String nameProduct;
+    private long importPrice;
+    private long price;
+    private int amount;
+    private String type;
+    private String describe;
+    private String image;
+    private String producer;
+
+    public Product() {
+    }
 
     public Product(int ID, String nameProduct, long importprice, long price, int amount, String type, String describe, String image, String producer) {
         this.ID = ID;
@@ -15,14 +26,7 @@ public class Product {
         this.producer = producer;
     }
 
-    private String nameProduct;
-    private long importPrice;
-    private long price;
-    private int amount;
-    private String type;
-    private String describe;
-    private String image;
-    private String producer;
+
 
     public int getID() {
         return ID;
