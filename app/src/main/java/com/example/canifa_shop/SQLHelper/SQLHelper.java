@@ -47,7 +47,8 @@ public class SQLHelper extends SQLiteOpenHelper {
     static final String PRODUCT_TYPE = "type";
     static final String PRODUCT_DESCRIBE = "describe";
     static final String PRODUCT_IMAGE = "image";
-    static final String PRODUCT_PRODUCER = "producer";
+    static final String PRODUCT_BARD_CODE
+            = "producer";
     static final String REPORT_ID = "IDReport";
     static final String REPORT_DATE = "date";
     static final String REPORT_TOTAL_IMPORT = "totalImport";
@@ -204,7 +205,8 @@ public class SQLHelper extends SQLiteOpenHelper {
         contentValues.put(PRODUCT_TYPE, product.getType());
         contentValues.put(PRODUCT_DESCRIBE, product.getDescribe());
         contentValues.put(PRODUCT_IMAGE, product.getImage());
-        contentValues.put(PRODUCT_PRODUCER, product.getProducer());
+        contentValues.put(PRODUCT_BARD_CODE
+                , product.getBardCode());
         sqLiteDatabase.insert(DB_TABLE_PRODUCT, null, contentValues);
     }
 
@@ -219,7 +221,8 @@ public class SQLHelper extends SQLiteOpenHelper {
         contentValues.put(PRODUCT_TYPE, product.getType());
         contentValues.put(PRODUCT_DESCRIBE, product.getDescribe());
         contentValues.put(PRODUCT_IMAGE, product.getImage());
-        contentValues.put(PRODUCT_PRODUCER, product.getProducer());
+        contentValues.put(PRODUCT_BARD_CODE
+                , product.getBardCode());
         sqLiteDatabase.update(DB_TABLE_PRODUCT, contentValues, "ID = ?", new String[]{String.valueOf(product.getID())});
     }
 
@@ -253,8 +256,9 @@ public class SQLHelper extends SQLiteOpenHelper {
                 String type = cursor.getString(cursor.getColumnIndex(PRODUCT_TYPE));
                 String describe = cursor.getString(cursor.getColumnIndex(PRODUCT_DESCRIBE));
                 String image = cursor.getString(cursor.getColumnIndex(PRODUCT_IMAGE));
-                String producer = cursor.getString(cursor.getColumnIndex(PRODUCT_PRODUCER));
-                productList.add(new Product(ID, nameProduct,priceImport, price, amount, type, describe, image, producer));
+                String bardCode = cursor.getString(cursor.getColumnIndex(PRODUCT_BARD_CODE
+                ));
+                productList.add(new Product(ID, nameProduct,priceImport, price, amount, type, describe, image, bardCode));
             }
         return productList;
     }
@@ -270,7 +274,8 @@ public class SQLHelper extends SQLiteOpenHelper {
         contentValues.put(PRODUCT_TYPE, product.getType());
         contentValues.put(PRODUCT_DESCRIBE, product.getDescribe());
         contentValues.put(PRODUCT_IMAGE, product.getImage());
-        contentValues.put(PRODUCT_PRODUCER, product.getProducer());
+        contentValues.put(PRODUCT_BARD_CODE
+                , product.getBardCode());
         sqLiteDatabase.insert(DB_TABLE_ORDER_PRODUCT, null, contentValues);
     }
 
@@ -285,7 +290,8 @@ public class SQLHelper extends SQLiteOpenHelper {
         contentValues.put(PRODUCT_TYPE, product.getType());
         contentValues.put(PRODUCT_DESCRIBE, product.getDescribe());
         contentValues.put(PRODUCT_IMAGE, product.getImage());
-        contentValues.put(PRODUCT_PRODUCER, product.getProducer());
+        contentValues.put(PRODUCT_BARD_CODE
+                , product.getBardCode());
         sqLiteDatabase.update(DB_TABLE_ORDER_PRODUCT, contentValues, "ID = ?", new String[]{String.valueOf(product.getID())});
     }
 
@@ -318,7 +324,8 @@ public class SQLHelper extends SQLiteOpenHelper {
                 String type = cursor.getString(cursor.getColumnIndex(PRODUCT_TYPE));
                 String describe = cursor.getString(cursor.getColumnIndex(PRODUCT_DESCRIBE));
                 String image = cursor.getString(cursor.getColumnIndex(PRODUCT_IMAGE));
-                String producer = cursor.getString(cursor.getColumnIndex(PRODUCT_PRODUCER));
+                String producer = cursor.getString(cursor.getColumnIndex(PRODUCT_BARD_CODE
+                ));
                 productList.add(new Product(ID, nameProduct, priceImport ,price, amount, type, describe, image, producer));
             }
         return productList;

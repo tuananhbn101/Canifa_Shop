@@ -1,5 +1,6 @@
 package com.example.canifa_shop.Selling;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,8 +15,10 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.canifa_shop.Product.Object.Product;
+import com.example.canifa_shop.Product.ProductDetailActivity;
 import com.example.canifa_shop.R;
 import com.example.canifa_shop.SQLHelper.SQLHelper;
+
 import com.example.canifa_shop.Selling.Adapter.SellingAdapter;
 import com.example.canifa_shop.Selling.Adapter.SellingAdapterGrid;
 import com.example.canifa_shop.databinding.FragmentSellingBinding;
@@ -73,8 +76,15 @@ public class SellingFragment extends Fragment {
         productList.add(new Product());
         productList.add(new Product());
         productList.add(new Product());
-        sellingAdapter = new SellingAdapter(productList);
-        sellingAdapterGrid = new SellingAdapterGrid(productList);
+        productList.add(new Product());
+        productList.add(new Product());
+        productList.add(new Product());
+        productList.add(new Product());
+        productList.add(new Product());
+        productList.add(new Product());
+        productList.add(new Product());
+        sellingAdapter=new SellingAdapter(productList,getContext());
+        sellingAdapterGrid = new SellingAdapterGrid(productList,getContext());
     }
     public void setAdapter(){
         if(binding.imvGrid.getVisibility()==View.VISIBLE){

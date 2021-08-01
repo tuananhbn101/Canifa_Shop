@@ -9,12 +9,12 @@ public class Product {
     private String type;
     private String describe;
     private String image;
-    private String producer;
+    private String bardCode;
 
     public Product() {
     }
 
-    public Product(int ID, String nameProduct, long importprice, long price, int amount, String type, String describe, String image, String producer) {
+    public Product(int ID, String nameProduct, long importprice, long price, int amount, String type, String describe, String image, String bardCode) {
         this.ID = ID;
         this.nameProduct = nameProduct;
         this.importPrice = importprice;
@@ -23,7 +23,7 @@ public class Product {
         this.type = type;
         this.describe = describe;
         this.image = image;
-        this.producer = producer;
+        this.bardCode = bardCode;
     }
 
 
@@ -92,11 +92,11 @@ public class Product {
         this.image = image;
     }
 
-    public String getProducer() {
-        return producer;
+    public String getBardCode() {
+        return bardCode;
     }
 
-    public void setProducer(String producer) {
-        this.producer = producer;
+    public void setBardCode(String bardCode) {
+        this.bardCode = bardCode;
     }
 }
